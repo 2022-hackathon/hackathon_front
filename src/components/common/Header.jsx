@@ -15,6 +15,8 @@ export default function Header() {
 }
 
 const Container = styled.div`
+  z-index: 100;
+  position: fixed;
   width: 100vw;
   height: 70px;
   background: #91a7ff;
@@ -51,11 +53,13 @@ const Frame = styled.div`
       border: 2px solid #5c7cfa;
       color: #5c7cfa;
       background: #fff;
+      cursor: pointer;
     }
     &:last-child {
       width: 140px;
       background: #5c7cfa;
       color: #fff;
+      cursor: pointer;
     }
   }
 `;
