@@ -1,13 +1,11 @@
 import Header from "./components/common/Header";
+import SignUp from "./pages/SignUp";
 
 export default function App() {
   return (
     <div>
       <Header />
+      <SignUp />
     </div>
   );
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> fa6ed189bab2cfbf246b9c2604b8590cd55a1c71
