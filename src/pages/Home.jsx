@@ -7,37 +7,37 @@ export default function Home() {
       <StyledP>현재 인기 종목</StyledP>
       <RefreshButton>새로고침</RefreshButton>
       <DesContainer>
-        <Description>종목명</Description>
-        <Description>현재가</Description>
-        <Description>시가총액</Description>
-        <Description>거래량/거래대금</Description>
+        <div>종목명</div>
+        <div>현재가</div>
+        <div>시가총액</div>
+        <div>거래량/거래대금</div>
       </DesContainer>
       <ListContainer>
         <List>
-          <ListItemContainer>
+          <div>
             <ListItem>테스트</ListItem>
             <ListItem margin="120px">테스트</ListItem>
             <ListItem margin="125px">테스트</ListItem>
             <ListItem margin="160px">테스트</ListItem>
-          </ListItemContainer>
-          <ListItemContainer>
+          </div>
+          <div>
             <ListItem>테스트</ListItem>
             <ListItem margin="120px">테스트</ListItem>
             <ListItem margin="125px">테스트</ListItem>
             <ListItem margin="160px">테스트</ListItem>
-          </ListItemContainer>
-          <ListItemContainer>
+          </div>
+          <div>
             <ListItem>테스트</ListItem>
             <ListItem margin="120px">테스트</ListItem>
             <ListItem margin="125px">테스트</ListItem>
             <ListItem margin="160px">테스트</ListItem>
-          </ListItemContainer>
-          <ListItemContainer>
+          </div>
+          <div>
             <ListItem>테스트</ListItem>
             <ListItem margin="120px">테스트</ListItem>
             <ListItem margin="125px">테스트</ListItem>
             <ListItem margin="160px">테스트</ListItem>
-          </ListItemContainer>
+          </div>
         </List>
       </ListContainer>
     </StyledHome>
@@ -62,13 +62,8 @@ const RefreshButton = styled.button`
   width: 120px;
   height: 40px;
   border-radius: 10px;
-  border: 1px solid;
+  border: none;
   margin-left: 75px;
-`;
-
-const Description = styled.div`
-  height: auto;
-  line-height: 50px;
 `;
 const DesContainer = styled.div`
   display: flex;
@@ -77,19 +72,23 @@ const DesContainer = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
+  div {
+    height: auto;
+    line-height: 50px;
+  }
 `;
 const List = styled.div`
   width: 90%;
   height: auto;
   display: flex;
   flex-direction: column;
-  border : black 1px solid;
+  border: black 1px solid;
 `;
 const ListContainer = styled.div`
   display: flex;
   justify-content: center;
-`;
-const ListItemContainer = styled.div`
-  display: flex;
-  border-bottom : 1px solid;
+  div {
+    display: flex;
+    border-bottom: 1px solid;
+  }
 `;
